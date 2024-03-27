@@ -1,0 +1,29 @@
+{
+    "update_id": 551837195,
+    "message": {
+        "message_id": 3319,
+        "from": {
+            "id": 158510988,
+            "is_bot": false,
+            "first_name": "Riccardo",
+            "last_name": "Riva",
+            "username": "aris997",
+            "language_code": "it"
+        },
+        "chat": {
+            "id": 158510988,
+            "first_name": "Riccardo",
+            "last_name": "Riva",
+            "username": "aris997",
+            "type": "private"
+        },
+        "date": 1711454773,
+        "voice": {
+            "duration": 3,
+            "mime_type": "audio/ogg",
+            "file_id": "AwACAgQAAxkBAAIM92YCujV7R899w72PpvOKswLjjJQ-AAJhEwACzjkYUINtfCjZScAMNAQ",
+            "file_unique_id": "AgADYRMAAs45GFA",
+            "file_size": 15703
+        }
+    }
+}

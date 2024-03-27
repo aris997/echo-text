@@ -1,0 +1,23 @@
+{
+    "update_id": 551837157,
+    "message": {
+        "message_id": 3264,
+        "from": {
+            "id": 158510988,
+            "is_bot": false,
+            "first_name": "Riccardo",
+            "last_name": "Riva",
+            "username": "aris997",
+            "language_code": "it"
+        },
+        "chat": {
+            "id": 158510988,
+            "first_name": "Riccardo",
+            "last_name": "Riva",
+            "username": "aris997",
+            "type": "private"
+        },
+        "date": 1711449977,
+        "text": "hi"
+    }
+}
