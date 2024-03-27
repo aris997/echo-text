@@ -1,0 +1,12 @@
+bin
+lib
+lib64
+inclde
+**/__pycache__
+**/temp
+**/logs
+**/share
+pyvenv.cfg
+*.ipynb
+telegram_api.yml
+telegram_api.yml.bk
