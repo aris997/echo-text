@@ -10,3 +10,5 @@ pyvenv.cfg
 *.ipynb
 telegram_api.yml
 telegram_api.yml.bk
+.venv
+api-keys.yml
