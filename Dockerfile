@@ -1,17 +1,30 @@
-FROM python3.12
+FROM python:3.12
 
 USER root
 
-RUN apt-get install ffmpeg
+# Update and install ffmpeg (dependencies of openai-whisper)
+RUN apt-get update -y
 
-RUN makedir app
+RUN apt-get install -y ffmpeg
 
 WORKDIR /app
 
-USER 1001
-
 COPY . .
 
-RUN pip install -r requirements.txt
+# Install requirements by hand
 
-CMD ["uvicorn", "main:app" "--host", "0.0.0.0", "--port", "8000", "--reload"]
+RUN pip3 install fastapi PyYAML Requests uvicorn
+
+RUN pip3 install langchain_cohere
+
+RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+
+RUN pip3 install openai
+
+RUN pip3 install openai-whisper==20231117
+
+RUN pip install numpy==1.26.4
+
+# RUN pip install -r requirements.txt
+
+CMD ["python", "main.py"]

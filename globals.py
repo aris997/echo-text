@@ -5,7 +5,7 @@ import whisper
 import requests
 
 from datetime import datetime
-from openai import OpenAI
+# from openai import OpenAI
 from fastapi import FastAPI, Request
 
 # My modules
@@ -28,7 +28,6 @@ utils.create_folder(TEMP_PATH)
 # choose here the size of ur model
 MODEL = whisper.load_model('small')
 logger.debug("model was loaded")
-UNUSEFUL_KEYS = ["chat", "date", "from", "message_id"]
 
 # TODO: check existence of this file
 telegram_api_path = "api-keys.yml"
@@ -44,3 +43,5 @@ logger.info(telegram_endpoint.set(API_TELEGRAM, NGROK))
 TELEGRAM_SEND_MESSAGE = f"https://api.telegram.org/bot{API_TELEGRAM}/SendMessage"
 TELEGRAM_GET_PATH = f"https://api.telegram.org/bot{API_TELEGRAM}/getFile"
 TELEGRAM_DOWNLOAD = f"https://api.telegram.org/file/bot{API_TELEGRAM}/"
+
+UNUSEFUL_KEYS = ["chat", "date", "from", "message_id"]

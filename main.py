@@ -27,7 +27,7 @@ async def messager(request: Request):
         bot_message = generate_response.answer(user_message)
         # chiamata a clode
 
-    elif "voice" in message_type:
+    elif "voice" in message_type and False:
         logger.debug(f"is audio message")
         audio_transcription = stt.via_whisper(
             payload.get("message", {}).get("voice", {}).get("file_id", ""),
