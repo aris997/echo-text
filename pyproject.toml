@@ -1,0 +1,12 @@
+[project]
+name = "echo-text"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi==0.111.0",
+    "openai-whisper==20231117",
+    "pyyaml==6.0.1",
+    "requests==2.32.3",
+]
