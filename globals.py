@@ -1,12 +1,7 @@
 import os
 import yaml
-import json
 import whisper
-import requests
 
-from datetime import datetime
-from openai import OpenAI
-from fastapi import FastAPI, Request
 
 # My modules
 import utils

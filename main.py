@@ -28,7 +28,7 @@ async def messager(request: Request):
         # chiamata a clode
 
     elif "voice" in message_type:
-        logger.debug(f"is audio message")
+        logger.debug("is audio message")
         audio_transcription = stt.via_whisper(
             payload.get("message", {}).get("voice", {}).get("file_id", ""),
             language_transcription = "it")
@@ -55,3 +55,4 @@ if __name__ == "__main__":
         import uvicorn 
 
         uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+

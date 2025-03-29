@@ -3,7 +3,6 @@ import logging
 import logging.handlers
 
 import utils
-from datetime import datetime
 
 # logger
 LOG_DIR = os.path.join("logs")
